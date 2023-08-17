@@ -1,0 +1,78 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <h2 class="btn btn-success heading">HAND GESTURES WEBSITE
+        <br>
+        <span>👍</span>
+        <span>👎</span>
+        <span>✌️</span>
+        <span>👌</span>
+        <span>🫵</span>
+        <span>🤏</span>
+      </h2>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie of gesture to know about its meaning!
+      	<br>
+      </p>
+      <p style="font-size: 18px;">Our Model is trained by the following hand gestures:
+        <br>
+        <span>👍</span>
+        <span>👎</span>
+      	<span>👌</span>
+        <span>🫵</span>
+        
+      </p>
+
+      <br>
+      <br>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Live Webcam - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button class="btn btn-warning" onclick="take_snapshot();" id="capture">Capture</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction #1</label>
+          <p class="emoji_name" id="emoji_result_1"></p>
+          <p class="emoji" id="emoji_1"></p>
+          <br>
+          <label>Prediction #2</label>
+          <p class="emoji_name" id="emoji_result_2"></p>
+          <p class="emoji" id="emoji_2"></p>
+      </div>
+      
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button class="btn btn-success" onclick="predict();" id="capture">Identify</button>
+      </div>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>

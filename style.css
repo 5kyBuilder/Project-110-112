@@ -1,0 +1,45 @@
+body
+{
+  color: white;
+  background: #c0ffc9;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+.emoji_name
+{
+  color: black;
+}
+.emoji_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+
+p{
+  color: black;
+}
+
+.heading {
+  font-size: 40px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}
+
+label{
+  background-color: white;
+  border-radius: 10px;
+  padding: 6px;
+  color: green;
+  font-size: 16px;
+}
